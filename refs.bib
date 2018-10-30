@@ -7,14 +7,14 @@
 @article{maiti2017concatenative,
   title={Concatenative Resynthesis using twin networks},
   author={Maiti, Soumi and Mandel, Michael I},
-  journal={Proc. Interspeech 2017},
+  journal={Proc. Interspeech},
   pages={3647--3651},
   year={2017}
 }
 @inproceedings{maiti2018large,
   title={Large vocabulary concatenative resynthesis},
   author={Maiti, Soumi and Ching, Joey and Mandel, Michael},
-  booktitle={Proceedings of Interspeech},
+  booktitle={Proc. Interspeech},
   year={2018}
 }
 
@@ -80,14 +80,13 @@
 @inproceedings{scalart1996speech,
   title={Speech enhancement based on a priori signal to noise estimation},
   author={Scalart, Pascal and others},
-  booktitle={Acoustics, Speech, and Signal Processing, 1996. ICASSP-96. Conference Proceedings., 1996 IEEE International Conference on},
+  booktitle={Proc. IEEE Intl. Conf. Acoustics, Speech and Signal Processing (ICASSP)},
   volume={2},
   pages={629--632},
   year={1996},
-  organization={IEEE}
 }
 @article{morise2016world,
-  title={WORLD: a vocoder-based high-quality speech synthesis system for real-time applications},
+  title={{WORLD}: a vocoder-based high-quality speech synthesis system for real-time applications},
   author={Morise, Masanori and Yokomori, Fumiya and Ozawa, Kenji},
   journal={IEICE TRANSACTIONS on Information and Systems},
   volume={99},
@@ -97,8 +96,228 @@
   publisher={The Institute of Electronics, Information and Communication Engineers}
 }
 @inproceedings{kominek2004cmu,
-  title={The CMU Arctic speech databases},
+  title={The {CMU} Arctic speech databases},
   author={Kominek, John and Black, Alan W},
   booktitle={Fifth ISCA workshop on speech synthesis},
   year={2004}
+}
+@article{lim1979enhancement,
+  title={Enhancement and bandwidth compression of noisy speech},
+  author={Lim, Jae S and Oppenheim, Alan V},
+  journal={Proc. IEEE},
+  volume={67},
+  number={12},
+  pages={1586--1604},
+  year={1979}
+}
+@article{hochreiter1997long,
+  title={Long short-term memory},
+  author={Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  journal={Neural Computation},
+  volume={9},
+  number={8},
+  pages={1735--1780},
+  year={1997},
+  publisher={MIT Press}
+}
+@article{hornik1989multilayer,
+  title={Multilayer feedforward networks are universal approximators},
+  author={Hornik, Kurt and Stinchcombe, Maxwell and White, Halbert},
+  journal={Neural networks},
+  volume={2},
+  number={5},
+  pages={359--366},
+  year={1989},
+  publisher={Elsevier}
+}
+@inproceedings{rix2001perceptual,
+  title={Perceptual evaluation of speech quality ({PESQ})-a new method for speech quality assessment of telephone networks and codecs},
+  author={Rix, Antony W and Beerends, John G and Hollier, Michael P and Hekstra, Andries P},
+  booktitle={Proc. IEEE Intl. Conf. Acoustics, Speech and Signal Processing (ICASSP)},
+  volume={2},
+  pages={749--752},
+  year={2001},
+  organization={IEEE}
+}
+@inproceedings{taal2010short,
+  title={A short-time objective intelligibility measure for time-frequency weighted noisy speech},
+  author={Taal, Cees H and Hendriks, Richard C and Heusdens, Richard and Jensen, Jesper},
+  booktitle={Proc. IEEE Intl. Conf. Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={4214--4217},
+  year={2010},
+}
+@inproceedings{mandel14c,
+	author = {Michael I Mandel and Young-Suk Cho and Yuxuan Wang},
+  title = {Learning a concatenative resynthesis system for noise suppression},
+  booktitle = {Proc. {IEEE} {GlobalSIP} Conf},
+  year = 2014,
+  pages={582-586}, 
+  abstract = {This paper introduces a new approach to dictionary-based source
+  separation employing a learned non-linear metric.  In contrast to
+  existing parametric source separation systems, this model is able to
+  utilize a rich dictionary of speech signals.  In contrast to
+  previous dictionary-based source separation systems, the system can
+  utilize perceptually relevant non-linear features of the noisy and
+  clean audio.  This approach utilizes a deep neural network (DNN) to
+  predict whether a noisy chunk of audio contains a given clean chunk.
+  Speaker-dependent experiments on the CHiME2-GRID corpus show 
+  that this model is able to accurately resynthesize clean speech from
+  noisy observations.  Preliminary listening tests show that the
+  system's output has much higher audio quality than existing parametric
+  systems trained on the same data, achieving noise suppression levels
+  close to those of the original clean speech.}
+ }
+
+@inproceedings{mandel15d,
+  author = {Michael I Mandel and Young Suk Cho},
+  title = {Audio super-resolution using concatenative resynthesis},
+  booktitle = { {IEEE} Workshop on Applications of Signal Processing to Audio and Acoustics},
+  year = {2015},
+  abstract = {  This paper utilizes a recently introduced non-linear
+  dictionary-based denoising system in another voice mapping task,
+  that of transforming low-bandwidth, low-bitrate speech into
+  high-bandwidth, high-quality speech.  The system uses a deep neural
+  network as a learned non-linear comparison function to drive unit
+  selection in a concatenative synthesizer based on clean recordings.
+  This neural network is trained to predict
+  whether a given clean audio segment from the dictionary could be
+  transformed into a given segment of the degraded observation.
+  Speaker-dependent
+  experiments on the small-vocabulary CHiME2-GRID corpus show that
+  this model is able to resynthesize high quality clean speech from
+  degraded observations.  Preliminary listening tests show that the
+  system is able to improve subjective speech quality evaluations by
+  up to 50 percentage points, while a similar system based on
+  non-negative matrix factorization and trained on the same data
+  produces no significant improvement.},
+  slides = {http://m.mr-pc.org/work/waspaa15slides.pdf},
+  http = {http://mr-pc.org/work/waspaa15/}
+}
+@inproceedings{syed2018concatenative,
+  title={Concatenative resynthesis with improved training signals for speech enhancement},
+  author={Syed, Ali Raza and Anh, Trinh Viet and Mandel, Michael I},
+  booktitle={Proc. Interspeech},
+  year={2018}
+}
+
+@inproceedings{ogawa2016robust,
+  title={Robust Example Search Using Bottleneck Features for Example-Based Speech Enhancement.},
+  author={Ogawa, Atsunori and Seki, Shogo and Kinoshita, Keisuke and Delcroix, Marc and Yoshioka, Takuya and Nakatani, Tomohiro and Takeda, Kazuya},
+  booktitle={Proc. Interspeech},
+  pages={3733--3737},
+  year={2016}
+}
+@inproceedings{nesbitt2018speech,
+  title={Speech Segment Clustering for Real-Time Exemplar-Based Speech Enhancement},
+  author={Nesbitt, David and Crookes, Danny and Ming, Ji},
+  booktitle={Proc. IEEE Intl. Conf. Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={5419--5423},
+  year={2018},
+}
+@inproceedings{rethage2018wavenet,
+  title={A wavenet for speech denoising},
+  author={Rethage, Dario and Pons, Jordi and Serra, Xavier},
+  booktitle={Proc. IEEE Intl. Conf. Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={5069--5073},
+  year={2018},
+}
+@inproceedings{van2016wavenet,
+  title={{WaveNet}: A generative model for raw audio.},
+  author={Van Den Oord, A{\"a}ron and Dieleman, Sander and Zen, Heiga and Simonyan, Karen and Vinyals, Oriol and Graves, Alex and Kalchbrenner, Nal and Senior, Andrew W and Kavukcuoglu, Koray},
+  booktitle={SSW},
+  pages={125},
+  year={2016}
+}
+@inproceedings{tamamori2017speaker,
+  title={Speaker-dependent {WaveNet} vocoder},
+  author={Tamamori, Akira and Hayashi, Tomoki and Kobayashi, Kazuhiro and Takeda, Kazuya and Toda, Tomoki},
+  booktitle={Proc. Interspeech},
+  volume={2017},
+  pages={1118--1122},
+  year={2017}
+}
+@inproceedings{jin2018fftnet,
+  title={Fftnet: A Real-Time Speaker-Dependent Neural Vocoder},
+  author={Jin, Zeyu and Finkelstein, Adam and Mysore, Gautham J and Lu, Jingwan},
+  booktitle={Proc. IEEE Intl. Conf. Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={2251--2255},
+  year={2018},
+ % organization={IEEE}
+}
+@inproceedings{adiga2018use,
+  title={On the use of {WaveNet} as a statistical vocoder},
+  author={Adiga, Nagaraj and Tsiaras, Vassilis and Stylianou, Yannis},
+  booktitle={Proc. of ICASSP},
+  year={2018}
+}
+@article{chen2006new,
+  title={New insights into the noise reduction {W}iener filter},
+  author={Chen, Jingdong and Benesty, Jacob and Huang, Yiteng and Doclo, Simon},
+  journal={IEEE Trans. Audio, Speech, and Language Processing},
+  volume={14},
+  number={4},
+  pages={1218--1234},
+  year={2006},
+  %publisher={IEEE}
+}
+
+@article{WangTrainingTargetsSupervised2014,
+  title = {On Training Targets for Supervised Speech Separation},
+  volume = {22},
+  issn = {2329-9290},
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4293540/},
+  doi = {10/gfghdf},
+  abstract = {Formulation of speech separation as a supervised learning problem has shown considerable promise. In its simplest form, a supervised learning algorithm, typically a deep neural network, is trained to learn a mapping from noisy features to a time-frequency representation of the target of interest. Traditionally, the ideal binary mask (IBM) is used as the target because of its simplicity and large speech intelligibility gains. The supervised learning framework, however, is not restricted to the use of binary targets. In this study, we evaluate and compare separation results by using different training targets, including the IBM, the target binary mask, the ideal ratio mask (IRM), the short-time Fourier transform spectral magnitude and its corresponding mask (FFT-MASK), and the Gammatone frequency power spectrum. Our results in various test conditions reveal that the two ratio mask targets, the IRM and the FFT-MASK, outperform the other targets in terms of objective intelligibility and quality metrics. In addition, we find that masking based targets, in general, are significantly better than spectral envelope based targets. We also present comparisons with recent methods in non-negative matrix factorization and speech enhancement, which show clear performance advantages of supervised speech separation.},
+  number = {12},
+  journal = {IEEE/ACM Trans. Audio, Speech, and Language Processing},
+  urldate = {2018-10-28},
+  date = {2014-12},
+  year={2014},
+  pages = {1849-1858},
+  author = {Wang, Yuxuan and Narayanan, Arun and Wang, DeLiang},
+  file = {Zotero/storage/LJWAPZZ5/wang_narayanan_et_al_2014_on_training_targets_for.pdf},
+  eprinttype = {pmid},
+  eprint = {25599083},
+  pmcid = {PMC4293540}
+  
+}
+
+@inproceedings{BarkerthirdCHiMEspeech2015,
+  title = {The Third ‘{{CHiME}}’ Speech Separation and Recognition Challenge: {{Dataset}}, Task and Baselines},
+  doi = {10.1109/ASRU.2015.7404837},
+  shorttitle = {The Third ‘{{CHiME}}’ Speech Separation and Recognition Challenge},
+  abstract = {The CHiME challenge series aims to advance far field speech recognition technology by promoting research at the interface of signal processing and automatic speech recognition. This paper presents the design and outcomes of the 3rd CHiME Challenge, which targets the performance of automatic speech recognition in a real-world, commercially-motivated scenario: a person talking to a tablet device that has been fitted with a six-channel microphone array. The paper describes the data collection, the task definition and the baseline systems for data simulation, enhancement and recognition. The paper then presents an overview of the 26 systems that were submitted to the challenge focusing on the strategies that proved to be most successful relative to the MVDR array processing and DNN acoustic modeling reference system. Challenge findings related to the role of simulated data in system training and evaluation are discussed.},
+  eventtitle = {2015 {{IEEE Workshop}} on {{Automatic Speech Recognition}} and {{Understanding}} ({{ASRU}})},
+  booktitle = {Proc. {{IEEE Wkshp.}} on {{Automatic Speech Recognition}} and {{Understanding}} ({{ASRU}})},
+  date = {2015-12},
+  year={2015},
+  pages = {504-511},
+  keywords = {'CHiME' challenge,Arrays,automatic speech recognition,baseline systems,CHiME speech separation and recognition challenge,data collection,data enhancement,data handling,data recognition,data simulation,DNN acoustic modeling reference system,far field speech recognition technology,microphone array,microphone arrays,Microphones,MVDR array processing,Noise measurement,Noise-robust ASR,signal processing,six-channel microphone array,Speech,speech recognition,Speech recognition,tablet device,task definition,Training,Training data},
+  author = {Barker, J. and Marxer, R. and Vincent, E. and Watanabe, S.},
+  file = {Zotero/storage/UP42YFWE/7404837.html}
+}
+
+@article{AkbariReconstructingintelligiblespeech2018,
+  langid = {english},
+  title = {Reconstructing Intelligible Speech from the Human Auditory Cortex},
+  url = {https://www.biorxiv.org/content/early/2018/06/19/350124},
+  doi = {10/gfghdm},
+  abstract = {Auditory stimulus reconstruction is a technique that finds the best approximation of the acoustic stimulus from the population of evoked neural activity. Reconstructing speech from the human auditory cortex creates the possibility of a speech neuroprosthetic to establish a direct communication with the brain and has been shown to be possible in both overt and covert conditions. However, the low quality of the reconstructed speech has severely limited the utility of this method for brain-computer interface (BCI) applications. To advance the state-of-the-art in speech neuroprosthesis, we combined the recent advances in deep learning with the latest innovations in speech synthesis technologies to reconstruct closed-set intelligible speech from the human auditory cortex. We investigated the dependence of reconstruction accuracy on linear and nonlinear regression methods and the acoustic representation that is used as the target of reconstruction, including spectrogram and speech synthesis parameters. In addition, we compared the reconstruction accuracy from low and high neural frequency ranges. Our results show that a deep neural network model that directly estimates the parameters of a speech synthesizer from all neural frequencies achieves the highest subjective and objective scores on a digit recognition task, improving the intelligibility by 65\% over the baseline. These results demonstrate the efficacy of deep learning and speech synthesis algorithms for designing the next generation of speech BCI systems, which not only can restore communications for paralyzed patients but also have the potential to transform human-computer interaction technologies.},
+  journaltitle = {bioRxiv},
+  journal={bioRxiv},
+  year={2018},
+  urldate = {2018-10-28},
+  date = {2018-06-19},
+  pages = {350124},
+  author = {Akbari, Hassan and Khalighinejad, Bahar and Herrero, Jose and Mehta, Ashesh and Mesgarani, Nima},
+  file = {Zotero/storage/FIWLBBUI/akbari_khalighinejad_et_al_2018_reconstructing_intelligible.pdf;Zotero/storage/V2N7AJQ2/350124.html}
+}
+
+@techreport{ MUSHRA,
+  institution = {International Telecommunication Union Radiocommunication Standardization Sector ({ITU-R})},
+  organization = {{ITU-R}},
+  label = {ITU-R BS-1534-3,},
+  title = {Method for the subjective assessment of intermediate quality level of audio systems},
+  number = {BS.1534-3},
+  year = {2015},
 }
